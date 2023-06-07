@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aquarium</title>
+  <link rel="icon" href="images/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- <style>
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  </style> -->
+
+</head>
+
+<body>
+
+
+  <!-- Page Preloder -->
+  <!-- <div id="preloder">
+    <div class="loader"></div>
+  </div> -->
+
+  <!-- nav -->
+  <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-dark  fixed-top ">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+      <img class="navbar-brand text-white" src="images/marker-3.png" height="30px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white"></span>
+      </button>
+      <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white pe-4" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu mt-4" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white pe-4" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Event
+            </a>
+            <ul class="dropdown-menu mt-4" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white pe-4" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Fish
+            </a>
+            <ul class="dropdown-menu mt-4" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white pe-4" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class=" dropdown-menu  mt-4" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#section4">contact</a></li>
+              <li><a class="dropdown-item" href="policy.html">Privacy Policy</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="gallary.html">Gallary</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <div class="dropdown">
+            <li type class=" text text-white  dropdown-toggle float-end list-unstyled" data-bs-toggle="dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-heart-fill me-3 " viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg>
+            </li>
+            <ul class="dropdown-menu  mt-4 dropdown-menu-md-end "style="width: 20px;">
+              <li><a class="dropdown-item" href="wishlist.html">wishlist</a></li>
+              <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+              <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+          </div>
+          <div class="dropdown ">
+            <li type class=" text text-white  dropdown-toggle float-end list-unstyled" data-bs-toggle="dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-cart-fill me-3" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+            </li>
+            <ul class="dropdown-menu  mt-4 dropdown-menu-md-end">
+              <li><a class="dropdown-item" href="cart.html">cart</a></li>
+              <li><a class="dropdown-item" href="#">Bulk Order</a></li>
+              <li><a class="dropdown-item" href="#">Track Order</a></li>
+
+            </ul>
+          </div>
+          <!-- hover icon -->
+          <!-- <div class="dropdown">
+            <button class="dropbtn bg-dark"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-person-circle me-3" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg></button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> -->
+           <div class="dropdown header__top__hover">
+            <li type class=" text text-white  dropdown-toggle  list-unstyled " data-bs-toggle="dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-person-circle me-3" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+              </svg>
+            </li>
+            <div class="container" >
+             <ul class="dropdown-menu mt-4 dropdown-menu-md-end" >
+               <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+               <li><a class="dropdown-item" href="login.html">Log In</a></li>
+               <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+               <li><a class="dropdown-item" href="login.html">Log Out</a></li>
+ 
+             </ul>
+            </div>
+          </div> 
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Carousel -->
+  <div id="demo" class=" carousel slide" data-bs-ride="carousel">
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.jpg" class="" style="width:100%;height:auto">
+      </div>
+      <div class="carousel-item">
+        <img src="images/5.jpg" class="" style="width:100%;height:auto">
+  
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.jpg" class="" style="width:100%;height:auto  ">
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br>
+
+  <!-- first div -->
+  <div id="section1" class="container-sm">
+    <div class="row">
+      <div class="col-sm-6 bg-white" style=" height: 400px;">
+        <img src="images/4.jpeg" height="400px" width="100%">
+      </div>
+      <div class="col-sm-6 bg-white" style="padding:90px;">
+        <h3 class=""><b>Aquarium Maintenance Services</b> <b></b> </h3>
+        <h5 class="" style="text-align:justify">With over 30 years in the business and nationwide coverage we are one of
+          the
+          foremost aquarium and fish tank foremost aquarium and fish tank foremost aquarium and fish tank maintenance
+          companies in New Jersey.</h5>
+      </div>
+    </div>
+
+    <!-- second div -->
+    <div class=" container-sm">
+      <div class="row">
+        <div class="col-sm-6 bg-white" style="padding:90px;">
+          <h3 class=""><b> Aquarium Design, Manufacture,Installation</b> </h3>
+          <h5 class="col-sm " style="text-align:justify">The AquaPro have created some of the most stylish and luxury
+            bespoke
+            built
+            aquariums and fish tanks in the country. We draw on over 25 years of expertise in
+            designing, manufacturing and installing aquariums.</h5>
+        </div>
+        <div class="col-sm-6 bg-white" style=" height: 400px;">
+          <img src="images/8.jpeg" height="400px" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero1" class="container d-flex flex-column justify-content-end align-items-center">
+    <div>
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class=" text-sucess">Everything You Need<br><span>For Your Aquarium</span></h2>
+
+          <h3 class=" text-white">Get exciting offer<span>and up to</span></h3>
+          <h4 class=" font-size:50px text-white">20% off every product</h4>
+          <a href="membership.html" class="btn-get-started mt-5  " style="font-size:20px">Get Your Membership Now</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section>
+  <br>
+
+  <!-- slider -->
+
+  <div class="horizontal-slider-container-sm" style="overflow: hidden;">
+    <div class="row-sm ">
+      <ul class="horizonal-slider container ">
+        <li class="item-sm  kiran">
+          <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <div class="top-left ps-3 pe-4">New </div>
+
+
+          <h5 class="">Crowntail Betta Fish Fishjdh </h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus </p>
+          <h2><a href="cart.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end "><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill me-5" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+        <li class="item-sm "> <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <h5 class="">Crowntail Betta Fish Fishjdh</h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus</p>
+          <h2><a href="cart.html" class="add-cart float-end"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-cart-fill me-5" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill me-5" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+        <li class="item-sm "> <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <h5 class="">Crowntail Betta Fish Fishjdh</h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus</p>
+          <h2><a href="cart.html" class="add-cart float-end"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-cart-fill me-5" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill me-5" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+        <li class="item-sm kiran"> <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <div class="top-left ps-3 pe-4">Sell </div>
+          <h5 class="">Crowntail Betta Fish Fishjdh</h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus</p>
+          <h2><a href="cart.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill " viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+        <li class="item-sm kiran"> <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <div class="top-left ps-3 pe-4">New </div>
+          <h5 class="">Crowntail Betta Fish Fishjdh</h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus</p>
+          <h2><a href="cart.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill " viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+        <li class="item-sm"> <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <h5 class="">Crowntail Betta Fish Fishjdh</h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus</p>
+          <h2><a href="cart.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill " viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+
+        <li class="item-sm"> <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <h5 class="">Crowntail Betta Fish Fishjdh</h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus</p>
+          <h2><a href="cart.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill " viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+        <li class="item-sm"> <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <h5 class="">Crowntail Betta Fish Fishjdh</h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus</p>
+          <h2><a href="cart.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill " viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+        <li class="item-sm kiran"> <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <div class="top-left ps-3 pe-4">Sell </div>
+          <h5 class="">Crowntail Betta Fish Fishjdh</h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus</p>
+          <h2 class=""><a href="cart.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg"
+                width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill " viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+        <li class="item-sm"> <img src="images/x.jpeg" style="width:100%;height:200px;">
+          <h5 class="">Crowntail Betta Fish Fishjdh</h5>
+          <p class="">Lorem risus purus erat purus augue mattis. Lectus</p>
+          <h2><a href="cart.html" class="add-cart float-end me-5"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a>
+            <a href="wishlist.html" class="add-cart float-end me-5 "><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-heart-fill " viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg></a>
+          </h2>
+          <b>
+            <p class="">weight:230kg</p>
+          </b>
+          <h5 style="color: rgb(48, 170, 170);">$67.24</h5>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- reviews-->
+  <section>
+    <div id="section3" class="container bg-white p-4" style="color:black;">
+      <h2 style="text-align:center; "> <b>Client About Us</b></h2>
+      <br>
+      <div class="row">
+        <div class="col-sm-6 ">
+          <img src="images/Betta-Fish-HD-Wallpaper-Desktop-Computer-Widescreen-768x461.jpg" width="100%">
+        </div>
+        <div class="col-sm-6 pt-5 ps-5 mt-3">
+          <p>“I have found AquaPro to be completely reliable.<br> I will forever be grateful to them for
+            cleaning
+            things up <br> after Katrina with out urging from me.”<br>
+            <br> &nbsp; -&nbsp; Godfrey Griffin
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 pt-3 ps-5 mt-3">
+          <p>“I have found AquaPro to be completely reliable.<br> I will forever be grateful to them for
+            cleaning
+            things up <br> after Katrina with out urging from me.”<br>
+            <br> &nbsp; -&nbsp; Godfrey Griffin
+          </p>
+        </div>
+
+        <div class="col-sm-3 ps-1">
+          <img src="images/y.jpeg" height="250px" width="100%">
+        </div><br>
+        <div class="col-sm-3 ps-1 pt-1">
+          <img src="images/x.jpeg" height="250px" width="100%">
+        </div><br><br><br>
+        <div class="col-sm-3 ps-1 pt-1">
+          <img src="images/z.jpeg" height="250px" width="100%">
+        </div><br>
+      </div>
+    </div><br>
+  </section>
+  <!-- description -->
+  <div class="container">
+    <div>
+      <p class="col-sm p-4" style="text-align: justify;font-size:vw;">
+      <section>
+        <button type="button" class="btn btn-secondary">DESCRIPTION</button>
+        <button type="button" class="btn btn-secondary">REVIEWS</button> <br><br>
+        Lorem ipsum dolor sit amet, morbi pulvinar, lectus adipiscing magna vel id, proin et sed aliquam nonummy
+        vestibulum tellus, nec blandit morbi viverra mauris mauris leo, magna purus fringilla. Scelerisque
+        pellentesque in, et montes suscipit massa nulla, eu urna. Nunc at, tincidunt phasellus lorem dapibus
+        tristique. Ultricies libero cursus etiam arcu consequat, phasellus suscipit vitae duis velit,
+        scelerisque
+        congue nisl bibendum, tempor tincidunt felis mauris magnis dolor est. Morbi sit aptent. Sit imperdiet
+        venenatis adipiscing ornare, nunc pede etiam aptent tempus, enim quisque interdum vehicula. Nonummy
+        nostra
+        ac mauris rutrum in arcu, sed turpis consequat elementum at in, sit porta ut ante in sed recusandae,
+        euismod
+        posuere consectetuer quisque sociosqu nec, magna enim nisl pellentesque. Pretium accusantium amet quis
+        donec
+        dui a, natoque nulla, luctus cursus mauris enim gravida, bibendum nunc. Diam etiam.<br><br>
+
+        Lorem risus purus erat purus augue mattis. Lectus euismod interdum aenean lobortis fermentum est, ac sed
+        in
+        donec, libero eros, gravida malesuada pellentesque nonummy cras leo congue. Vulputate bibendum nec leo
+        viverra, amet nascetur eget diam interdum sunt sed, viverra nulla dui duis vulputate, neque litora,
+        laoreet
+        ante mus in. Sed consectetuer elit porta maecenas sit ornare. Velit massa risus ultrices neque lacinia
+        eget,
+        consectetuer vestibulum egestas in praesent nulla interdum, eu amet amet lorem lorem consectetuer, diam
+        donec aliquet. Ligula mauris tincidunt quam semper arcu. Phasellus nec, dapibus nunc amet pharetra non,
+        porta wisi sit eget. Lectus vel mauris platea urna. Eros nec etiam ipsum a adipiscing, nulla risus
+        vehicula
+        sapien. Non mauris id turpis lacinia, ut varius penatibus, elit lobortis sollicitudin accumsan, duis
+        lobortis, faucibus et praesent nostra tristique. Maecenas egestas.<br><br>
+        </p>
+    </div>
+  </div>
+  </section>
+
+  <!--footer -->
+  <div id="section4" class=" container bg-dark text-white ">
+
+    <div class="row">
+      <div class="col-sm">
+        <img src="images/marker-3.png " class="ms-5 mt-2" style="height: 70px;">
+        <p class="ms-5">
+          Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit
+          magna,
+          nec imperdiet lacus semper vitae. eget purus mauris
+          .</p>
+        <!-- <div class="social-links d-flex mt-4">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div> -->
+      </div>
+
+      <div class="col-sm pt-5 ps-5">
+        <h4><b>Useful Links</b></h4>
+        <ul>
+          <li href="#">Home</li>
+          <li href="#">About us</li>
+          <li href="#">Services</li>
+          <li href="#">Terms of service</li>
+          <li href="#">Privacy policy</li>
+        </ul>
+      </div>
+
+      <div class="col-sm pt-5 ps-5">
+        <h4><b>Our Services</b></h4>
+        <ul>
+          <li href="#">Web Design</li>
+          <li href="#">Web Development</li>
+          <li href="#">Product Management</li>
+          <li href="#">Marketing</li>
+        </ul>
+      </div>
+
+      <div class="col-sm pt-5 ps-5">
+        <h4><b>Contact Us</b></h4>
+        <p>
+          625 @ David Blake Road,<br>
+          Adventureland,<br> LA 14536, USA <br><br>
+          <strong>Phone:</strong> +1 5589 55488 55<br>
+          <strong>Email:</strong> info@example.com<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="container pt-4 bg-white text-dark" style="color: white;text-align: center;">
+    <h6>© Copyright Manasvi Tech Solution Pvt Ltd. All Rights Reserved Terms of Use and
+      Privacy Policy <br><a href="https://manasvi.tech/">Manasvi Tech Solution Pvt Ltd</a></h6>
+  </div>
+  </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center float-end"><svg
+      xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="darkorange" class="bi bi-arrow-up-circle-fill"
+      viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+    </svg><br></a>
+  </footer><!-- End Footer -->
+
+  <script>
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+    }
+  </script>
+</body>
+
+</html>

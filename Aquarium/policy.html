@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquarium</title>
+    <link rel="icon" href="images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="bg-dark">
+    <!-- nav -->
+  <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+      <img class="navbar-brand text-white" src="images/marker-3.png" height="40px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" style="padding-left:200px" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white pe-4" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="index.html ">Home</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white pe-4" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Gifts
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white pe-4" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Fish
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white pe-4" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#section4">contact</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <div class="dropdown">
+            <li type class=" text text-white  dropdown-toggle float-end list-unstyled" data-bs-toggle="dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-heart-fill me-3 " viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+              </svg>
+            </li>
+            <ul class="dropdown-menu mt-4">
+              <li><a class="dropdown-item" href="wishlist.html">wishlist</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+              <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <li type class=" text text-white  dropdown-toggle float-end list-unstyled" data-bs-toggle="dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-cart-fill me-3" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+            </li>
+            <ul class="dropdown-menu mt-4">
+              <li><a class="dropdown-item" href="cart.html">cart</a></li>
+              <li><a class="dropdown-item" href="#">Bulk Order</a></li>
+              <li><a class="dropdown-item" href="#">Track Order</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <li type class=" text text-white  dropdown-toggle float-end list-unstyled" data-bs-toggle="dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-person-circle me-3" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+              </svg>
+            </li>
+            <ul class="dropdown-menu mt-4">
+              <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+              <li><a class="dropdown-item" href="login.html">Log In</a></li>
+              <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+              <li><a class="dropdown-item" href="login.html">Log Out</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-white container p-5 border-black" style="border:solid 1px black">
+<b><p class="">SECTION 1-WHAT DO WE DO WITH YOUR INFORMATION?</p></b>
+<p>When you purchase something from our store, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address.</p>
+<p>When you browse our store, we also automatically receive your computer's internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system</p>
+<p>Email marketing (if applicable): With your permission, we may send you emails about our store, new products and other updates.
+</p>
+
+<b><p>SECTION 2 - CONSENT</p></b>
+<b><p>How do we get your consent?</p></b>
+<p>When you provide Easypets with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.</p>
+<p>If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no.</p>
+<b><p>How do I withdraw my consent?</p></b>
+<p>If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support<b>@easypets.in</b></p>
+<b><p class="">SECTION 1-WHAT DO WE DO WITH YOUR INFORMATION?</p></b>
+<p>When you purchase something from our store, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address.</p>
+<p>When you browse our store, we also automatically receive your computer's internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system</p>
+<p>Email marketing (if applicable): With your permission, we may send you emails about our store, new products and other updates.
+</p>
+
+<b><p>SECTION 2 - CONSENT</p></b>
+<b><p>How do we get your consent?</p></b>
+<p>When you provide Easypets with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.</p>
+<p>If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no.</p>
+<b><p>How do I withdraw my consent?</p></b>
+<p>If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support<b>@easypets.in</b></p>
+<b><p class="">SECTION 1-WHAT DO WE DO WITH YOUR INFORMATION?</p></b>
+<p>When you purchase something from our store, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address.</p>
+<p>When you browse our store, we also automatically receive your computer's internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system</p>
+<p>Email marketing (if applicable): With your permission, we may send you emails about our store, new products and other updates.
+</p>
+
+<b><p>SECTION 2 - CONSENT</p></b>
+<b><p>How do we get your consent?</p></b>
+<p>When you provide Easypets with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.</p>
+<p>If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no.</p>
+<b><p>How do I withdraw my consent?</p></b>
+<p>If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support<b>@easypets.in</b></p>
+<b><p class="">SECTION 1-WHAT DO WE DO WITH YOUR INFORMATION?</p></b>
+<p>When you purchase something from our store, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address.</p>
+<p>When you browse our store, we also automatically receive your computer's internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system</p>
+<p>Email marketing (if applicable): With your permission, we may send you emails about our store, new products and other updates.
+</p>
+
+<b><p>SECTION 2 - CONSENT</p></b>
+<b><p>How do we get your consent?</p></b>
+<p>When you provide Easypets with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.</p>
+<p>If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no.</p>
+<b><p>How do I withdraw my consent?</p></b>
+<p>If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support<b>@easypets.in</b></p>
+  </div>
+
+  <!--footer -->
+  <div id="section4" class=" container bg-dark text-white ">
+
+    <div class="row">
+      <div class="col-sm">
+        <img src="images/marker-3.png " class="ms-5 mt-2" style="height: 70px;">
+        <p class="ms-5">
+          Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit
+          magna,
+          nec imperdiet lacus semper vitae. eget purus mauris
+          .</p>
+        <div class="social-links d-flex mt-4">
+          <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+        </div>
+      </div>
+
+      <div class="col-sm pt-5 ps-5">
+        <h4><b>Useful Links</b></h4>
+        <ul>
+          <li href="#">Home</li>
+          <li href="#">About us</li>
+          <li href="#">Services</li>
+          <li href="#">Terms of service</li>
+          <li href="#">Privacy policy</li>
+        </ul>
+      </div>
+
+      <div class="col-sm pt-5 ps-5">
+        <h4><b>Our Services</b></h4>
+        <ul>
+          <li href="#">Web Design</li>
+          <li href="#">Web Development</li>
+          <li href="#">Product Management</li>
+          <li href="#">Marketing</li>
+        </ul>
+      </div>
+      
+      <div class="col-sm pt-5 ps-5">
+      <h4><b>Contact Us</b></h4>
+        <p>
+          625 @ David Blake Road,<br>
+          Adventureland,<br> LA 14536, USA <br><br>
+          <strong>Phone:</strong> +1 5589 55488 55<br>
+          <strong>Email:</strong> info@example.com<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="container pt-4 bg-white text-dark" style="color: white;text-align: center;">
+    <h6>© Copyright Manasvi Tech Solution Pvt Ltd. All Rights Reserved Terms of Use and
+      Privacy Policy <br><a href="https://manasvi.tech/">Manasvi Tech Solution Pvt Ltd</a></h6>
+  </div>
+  </div> 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center float-end"><svg
+      xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="darkorange" class="bi bi-arrow-up-circle-fill"
+      viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+    </svg><br></a>
+  </footer><!-- End Footer -->
+</body>
+</html>
